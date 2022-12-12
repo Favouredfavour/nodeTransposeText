@@ -8,7 +8,6 @@ export const Message = mongoose.model(
     {
       message: {
         type: String,
-        maxlength: 300,
       },
     },
     { timestamps: true }

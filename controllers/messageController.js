@@ -18,6 +18,7 @@ export const save_message = async (req, res) => {
     });
 };
 
+// get all messages
 export const get_message = async (req, res) => {
   const message = await Message.find().limit(1);
   if (message) {
@@ -31,3 +32,4 @@ export const get_message = async (req, res) => {
     res.status(400).send("not found");
   }
 };
+
